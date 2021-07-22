@@ -8,5 +8,6 @@ const videos = document.querySelectorAll('video');
       } else {
         video.pause();
       }
+      
     });
   }

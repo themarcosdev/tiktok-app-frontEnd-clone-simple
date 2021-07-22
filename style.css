@@ -1,6 +1,7 @@
 *{
-  box-sizing: :border-box;
+  box-sizing:border-box;
   margin:0;
+  
 }
 
 html{
@@ -23,7 +24,7 @@ body{
   width: 100%;
   max-width: 400px;
   scroll-snap-type: y mandatory;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .app_videos::-webkit-scrollbar{
@@ -40,7 +41,7 @@ body{
   height:100% ;
   width: 100%;
   background-color: white;
-  scroll-snap-aligin: start;
+  scroll-snap-align: start;
 }
 
 .video_player{
@@ -55,14 +56,14 @@ body{
   right:10px;
 }
 
-.videosiderbar .mateiral-icons{
+.videoSiderbar .mateiral-icons{
   font-size:26px;
   cursor: pointer;
 }
 
 .videoSidebar_button{
 padding:20px;
-text-align: center;
+text-align:center;
 }
 
 .videoFooter{
@@ -73,26 +74,26 @@ text-align: center;
   display:flex;
 }
 
-// definindo e animando o disco
-@keyframes spinTheRecord{
+// definindo e animando o disco ainda em desenvolvimento 
+@keyframes gireODisco {
   from{
-    transform: rotate(0deg);
-  } to {
-      transform :rotate(360deg);
+        transform: rotate(0deg);
+  } to{
+        transform: rotate(360deg);
   }
 }
 
 .videoFooter_record{
-  animation: spinTheRecord infinite 5s linear;
+  animation: gireODisco infinite 5s linear;
   height: 50px;
   filter: invert(1);
   position: absolute;
   bottom: 0;
-  right: 20px;
+  right: 15px;
 }
 
 .videoFooter_text{
-  flex:1;
+  flex:-1;
 }
 
 .videoFooter_text h3{
@@ -106,24 +107,26 @@ text-align: center;
 .videoFooter_ticker{
   width: 400px;
   display: flex;
-  aligin-items:center;
+  align-items:center;
 }
 
 .videoFooter_ticker marquee{
   height: fit-content;
   margin-left: 30px;
-  width: 100%;
+  width: 60%;
+  
 }
 
 .videoFooter_description{
-  padding-bottom: 20px;
+  padding-bottom:20px;
 }
 
-@media(max-width:425px;){
+
+@media(max-width:425px){
   .app_videos{
     width: 100%;
     height:100% ;
     max-width:100%;
-    border-radius: 0;
+    border-radius:0px;
   }
 }
